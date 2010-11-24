@@ -1,0 +1,3 @@
+sfDoctrineSitemap:
+  url: /sitemap.xml
+  params: {module: sfDoctrineSitemap, action: index, sf_format: xml}
