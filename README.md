@@ -21,17 +21,19 @@ Finally, enable the sitemap module by adding, to your settings.yml:
 	  .settings:
 	    enabled_modules: [default, sfDoctrineSitemap]
 	
+The plugin adds a `sfDoctrineSitemap` route, pointing to `sitemap.xml`.
+
 How to use it?
 --------------
 
-### Basics
+# Basics
 
 By default the sitemap module will try and look for a Page model.
 
-### Supporting a new Model
+# Supporting a new Model
 
-# Tell the plugin what Model to process
+### Tell the plugin what Model to process
 You can customize what models to look for by overriding the `getObjectsForSitemap` method in the controller.
 
-# Define how to render the objects as a sitemap entry
+### Define how to render the objects as a sitemap entry
 By adding a partial, named `_url_CLASSNAME.xml.php`
